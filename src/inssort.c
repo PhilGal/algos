@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
   char arr[chunk.size + 1];
   strcpy(arr, chunk.memory);
   insertion_sort(arr, chunk.size);
-  printf("sorted string: %s\n", arr);
+  printf("sorted string: %s\n\a", arr);
   curl_easy_cleanup(curl);
   free(chunk.memory);
   curl_global_cleanup();
